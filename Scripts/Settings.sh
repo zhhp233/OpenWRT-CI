@@ -1,7 +1,7 @@
 #!/bin/bash
 
 git clone https://github.com/zzsj0928/luci-app-pushbot package/luci-app-pushbot
-#git clone https://github.com/gdy666/luci-app-lucky package/luci-app-lucky
+git clone https://github.com/gdy666/luci-app-lucky package/luci-app-lucky
 git clone https://github.com/brvphoenix/wrtbwmon package/wrtbwmon
 git clone https://github.com/brvphoenix/luci-app-wrtbwmon package/luci-app-wrtbwmon
 
