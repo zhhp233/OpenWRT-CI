@@ -7,7 +7,7 @@ git clone https://github.com/brvphoenix/luci-app-wrtbwmon package/luci-app-wrtbw
 
 
 #修改默认主题
-sed -i "s/luci-theme-bootstrap/luci-theme-$WRT_THEME/g" $(find ./feeds/luci/collections/ -type f -name "Makefile")
+#sed -i "s/luci-theme-bootstrap/luci-theme-$WRT_THEME/g" $(find ./feeds/luci/collections/ -type f -name "Makefile")
 
 CFG_FILE="./package/base-files/files/bin/config_generate"
 #修改默认IP地址
@@ -45,7 +45,7 @@ if [[ $WRT_URL == *"lede"* ]]; then
 elif [[ $WRT_URL == *"immortalwrt"* ]]; then
 	echo "CONFIG_PACKAGE_luci=y" >> ./.config
 	echo "CONFIG_LUCI_LANG_zh_Hans=y" >> ./.config
-        echo "CONFIG_PACKAGE_luci-app-upnp=y" >> ./.config
-	#echo "CONFIG_PACKAGE_luci-app-lucky=y" >> ./.config
+        #echo "CONFIG_PACKAGE_luci-app-upnp=y" >> ./.config
+	echo "CONFIG_PACKAGE_luci-app-lucky=y" >> ./.config
 	#echo "CONFIG_PACKAGE_luci-app-homeproxy=y" >> ./.config
 fi   
