@@ -4,7 +4,7 @@ git clone https://github.com/zzsj0928/luci-app-pushbot package/luci-app-pushbot
 git clone https://github.com/gdy666/luci-app-lucky package/luci-app-lucky
 git clone https://github.com/brvphoenix/wrtbwmon package/wrtbwmon
 git clone https://github.com/brvphoenix/luci-app-wrtbwmon package/luci-app-wrtbwmon
-
+git clone https://github.com/NagaseKouichi/luci-app-dns-forwarder package/openwrt-dns-forwarder
 
 #修改默认主题
 #sed -i "s/luci-theme-bootstrap/luci-theme-$WRT_THEME/g" $(find ./feeds/luci/collections/ -type f -name "Makefile")
